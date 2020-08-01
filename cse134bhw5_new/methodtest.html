@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <form>
+
+        <label for="article_id">article_id</label>
+        <input id="article_id" name="article_id" type="text" />
+
+        <label for="article_name">article_name</label>
+        <input id="article_name" name="article_name" type="text" />
+
+        <label for="article_body">article_body</label>
+        <input id="article_body" name="article_body" type="text" />
+
+        <br />
+        <br />
+        
+        <button id="postButton"> postBtn </button>
+        <button id="getButton"> getBtn </button>
+        <button id="putButton"> putBtn </button>
+        <button id="deleteButton"> deleteBtn </button>
+
+        <label for="method">Choose a method:</label>
+
+        <select name="method" id="method">
+            <option value="xml">XMLHTTPRequest</option>
+            <option value="fetch">Fetch</option>
+        </select>
+
+    </form>
+
+    <br />
+
+    <output id="response">
+        <table id="table">
+        </table>
+    </output>
+
+    <script src="./methodtest.js"></script>
+    <link rel="stylesheet" href="./methodtest.css">
+
+
+
+
+
+</body>
+
+</html>

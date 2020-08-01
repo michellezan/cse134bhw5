@@ -1,0 +1,15 @@
+th {
+    text-align: left;
+    min-width: 140px;
+}
+
+tr {
+    border: 1px solid black;
+    display: block;
+}
+
+
+td:empty::after,
+table:empty::after {
+    content: "empty";
+}
