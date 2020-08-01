@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous">
+
+<link rel="stylesheet" href="/styledcrud/css/crud.css" />
+<script defer src="/__/firebase/7.17.1/firebase-app.js"></script>
+<script defer src="/__/firebase/7.17.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.17.1/firebase-firestore.js"></script>
+<script defer src="/__/firebase/init.js"></script>
+
+<body>
+
+
+  <div id="posts">
+    <button id="logout" class="btn btn-secondary">Log out</button>
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <h1> Blog Posts</h1>
+    <hr />
+    <dialog id="dialog">
+      <form method="dialog">
+        <label for="post_title"> Post Title </label>
+        <input id="post_title" type="text" />
+        <br />
+        <label for="post_date">Post Date</label>
+        <input id="post_date" type="date" />
+        <br />
+        <label for="post_summary">Post Summary</label>
+        <input id="post_summary" type="text" />
+        <input id="post_id" type="hidden" />
+        <Menu>
+          <button id="ok">OK</button>
+        </Menu>
+      </form>
+    </dialog>
+    <br />
+    <dialog id="deleteDialog">
+      <form method="dialog">
+        <p>Delete post?</p>
+        <input id="delete_post_id" type="hidden" />
+        <menu>
+          <button value="cancel">Cancel</button>
+          <button id="delete_post_ok" value="ok">Ok</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <button id="createBtn" class="btn">Add new post</button>
+    <div id="output" class="overflow-auto"></div>
+  </div>
+
+  <form id="loginForm">
+    <img src="./images/firebase-logo.svg" width="160px" />
+    <!-- <h2>Firebase Login</h2> -->
+
+    <label for="email">Email</label>
+    <input name="email" id="email" />
+
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+
+
+    <button id="postButton"> Log in </button>
+  </form>
+
+
+
+  <div role="alert" aria-live="assertive" aria-atomic="true" class="toast"
+    data-autohide="true" data-animation="true" data-delay="1000">
+    <div class="toast-header">
+      <svg class="bd-placeholder-img rounded mr-2" width="20" height="20"
+        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+        focusable="false" role="img">
+        <rect width="100%" height="100%" fill="red"></rect>
+      </svg>
+      <strong class="mr-auto">Firebase Auth</strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+        aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body" id="errorMsg">
+    </div>
+  </div>
+  <script src="./js/layout.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="./js/firebaseAuth.js"></script>
+  <script src="./js/firebaseUtil.js"></script>
+  <script src="./js/crud.js"></script>
+
+</body>
+
+</html>

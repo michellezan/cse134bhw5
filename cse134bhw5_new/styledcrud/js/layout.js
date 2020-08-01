@@ -1,0 +1,3 @@
+document.write(unescape(
+  "%3Cstyle%20type%3D%22text/css%22%3E%0Abody%20%7B background-image%3A%20url%28%22http%3A//1.bp.blogspot.com/_q3ii9dlq0Tw/TPZYtX47cBI/AAAAAAAAFZg/od0LXquWtLo/S1600-R/Curious%2BChristmas.jpg%22%29%3B%20background-position%3A%20center%3B%20background-repeat%3A%20no-repeat%3B%20 background-attachment %3A%20fixed%3B%20%7D%0A%3C/style%3E%0A%3Cdiv%20id%3D%22tag%22%20 style%3D%22position%3Aabsolute %3B%20left%3A0px%3B%20top%3A30px%3B%20z-index%3A50%3B%20 width%3A150px%3B%20height%3A45px%3B%22%3E%0A%3Ca%20href%3D%22 http%3A//www.smittenblogdesigns.blogspot.com%22%20target%3D%22_blank%22%0A%3C/a%3E%3C/div%3E%20"
+));
